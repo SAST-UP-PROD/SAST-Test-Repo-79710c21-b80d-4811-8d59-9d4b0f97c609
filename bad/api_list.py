@@ -6,7 +6,6 @@ import requests
 @click.command()
 @click.argument('username')
 def cmd_api_client(username):
-
     
     r = requests.get('http://127.0.1.1:5000/api/post/{}'.format(username))
     if r.status_code != 200:
