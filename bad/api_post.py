@@ -5,7 +5,6 @@ import requests
 
 api_key_file = Path('/tmp/supersecret.txt')
 
-
 @click.command()
 @click.argument('message')
 def cmd_api_client(message):
